@@ -1,0 +1,295 @@
+@CHARSET "UTF-8";
+#img-header {
+	position:relative;
+	-webkit-animation-name:example;
+	-webkit-animation-duration:20s;
+	-webkit-animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+@-webkit-keyframes example{
+	0% {left:-40%;top:0px;}
+	50% {left:50%;top:0px;}
+	100% {left:100%;top:0px;}
+}
+.img-me{
+	size:48px 52px;
+}
+.name{
+	text-align:center;
+	font-size:50px;
+}
+.site-wrapper{
+	
+	text-align:center;
+	background-color:#ebf9f2;
+	height:600px;
+}
+h4{
+	font-size:25px;
+}
+.nav-icon {	
+	float: right;
+	width:90%;
+	margin:5px; 
+}
+
+.nav-bar{
+	font-size:150%;
+	background-color:#d8f3e5;
+	height:60px;	
+}
+
+.nav-bar #nav-bar{
+	text-align:center;
+	margin-top:15px;
+	
+}
+@media screen and(max-width:600px){
+	.nav-bar #nav-bar{
+		font-size:0.7em;
+	}
+}
+
+.container{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+
+.headerinfo{
+	height:100px;
+	background-color:#a6a6a6;
+}
+.headerinfo h1{
+	font: 3.4375em Quando;	
+	text-align:center;
+    letter-spacing: .08em;
+    text-shadow: #79d2a6 0.01em 0.01em 0, #79d2a6 0.02em 0.02em 0, #79d2a6 0.03em 0.03em 0, #79d2a6 0.04em 0.04em 0, #79d2a6 0.05em 0.05em 0
+}
+#div-nav {
+	height: 60px;
+	background-color: #d8f3e5;
+	
+}
+.uni{
+	margin-bottom:10px;
+}
+.intro{
+	text-align:center;
+}
+
+.img-me{
+	margin:20px auto;
+	
+}
+
+h2#uni {
+    float: left;
+    font-size:25px;
+}
+
+@media screen and (max-width: 600px) {
+    h2#uni {
+        float: none;
+        padding: 10px 0 0 0;
+        font-size:15px;
+    }
+}
+
+h2#gpa {
+    float: right;
+    
+}
+@media screen and (max-width: 600px) {
+    h2#gpa {
+        float: none;
+        font-size:15px;
+    }
+}
+
+h3#major {
+	float:left;
+	color:grey;	
+}
+
+.majordetail{	
+	text-indent:20px;
+	clear:left;
+	color:grey;
+	padding-top:0.02px;
+}
+
+h3{
+	font-family:Tahoma, Geneva, sans-serif;
+	line-height:0.5;
+}
+@media screen and (max-width: 600px) {
+	.majordetail{		
+		text-indent:0px;
+	}	
+	h3{
+	font-size:15px;
+	}
+}
+
+.location{
+	float:right;
+	clear:left;
+	margin-top:1em;
+	width:8.5em;
+}
+
+.uni #uni{
+	color: #3d5c3d;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	
+}
+.courses{
+	background-color:#b3ccb3;	
+}
+.courses h2{
+	text-align:left;
+	margin-bottom:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	
+}
+.courses-detail{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#course-detail{
+	margin-top:5px;
+	text-indent:20px;
+	font: 1.2em Quando;
+}
+@media screen and (max-width: 600px) {	
+    .courses h2{
+		font-size:20px;
+	}
+	#course-detail{
+		text-indent:0px;
+		font-size:12px;
+	}
+}
+.core{
+	
+}
+.project{
+	width:25%;
+	display:inline-block;
+	font:.9em Quando;
+	text-align:center;
+}
+.project img{
+	border:10px solid #c6ecc6;
+	
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.subtitle{
+	margin-bottom:20px;
+	font: 1.2em Quando;
+}
+.center{
+	text-align:center;
+}
+.footer {
+    height: 3em;
+    background: #6f7690;
+    text-align: center;
+    color: #ffefc8;
+    
+}
+.footer .icon {
+    margin-top: .25em;
+    margin-right:15px;
+}
+
+.footer span {
+    display: inline-block;
+    margin-left: .2em
+}
+#travel_s{
+	cursor:pointer;
+	transition:0.3s;
+}
+
+#travel_s:hover{
+	opacity:0.7;
+}
+/* the modal (background) */
+.modal{
+	display:none; /*hidden by default */
+	position:fixed; /*stay in place */
+	z-index:1; /* sit on top*/
+	padding-top:100px; /*location of the box */
+	left:0;
+	top:0;
+	width:100%; /*full width */
+	height:100%; /*full height */
+	overflow:auto;/*enable scroll if needed*/
+	background-color:rgb(0,0,0);/*fallback color*/
+	background-color:rgba(0,0,0,0.9); /*black w/ opacity */
+}
+.modal-content{
+	margin:auto;
+	display:block;
+	width:80%;
+	max-width:700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+

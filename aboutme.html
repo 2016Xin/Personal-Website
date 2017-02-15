@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Xin Chen</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link href='styles.css' rel='stylesheet'>
+	<!-- jquery file should be placed above the javaScript file -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Dosis|Concert+One|Quando|Handlee' rel='stylesheet' type='text/css'>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container-fluid">
+		<div id="div-nav" class="row">	
+			<div class = "nav-icon">		
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><img class="nav-button" src="images/home.png" alt="Home icon" style="width:40px;height:40px;"></a><span>&emsp;</span>
+				<a href="aboutme.html" data-toggle="tooltip" data-placement="bottom" title="About"><img class="nav-button" src="images/account.png" alt="About icon" style="width:45px;height:45px;"></a><span>&emsp;</span>
+				<a href="resume.pdf" data-toggle="tooltip" data-placement="bottom" title="Resume"><img class="nav-button" src="images/resume.png" alt="resume icon" style="width:40px;height:40px;"></a><span>&emsp;</span>
+				<a href="education.html" data-toggle="tooltip" data-placement="bottom" title="Education"><img class="nav-button" src="images/education.png" alt="Education icon" style="width:40px;height:40px;"></a><span>&emsp;</span>
+				<a href="projects.html" data-toggle="tooltip" data-placement="bottom" title="Projects"><img class="nav-button" src="images/projects.png" alt="Project icon" style="width:35px;height:35px;"></a><span>&emsp;</span>
+			</div>
+		</div>		
+		<script>
+			$(document).ready(function(){
+    		$('[data-toggle="tooltip"]').tooltip(); 
+			});
+		</script>		
+	</div>
+	<div class="headerinfo">
+		<div class="container"><h1>ABOUT</h1></div>
+	</div>
+	<div class="core">
+		<div class="container">
+			<div class="row center">
+			<img src="images/meme2.jpg" class="img-circle" style="width:200px;height:200px;">
+			<p style="text-algin:center;font:1.2em Quando;margin-bottom:10px;line-height:1.5;">I am an <br><span style="font-size:1.4em;">Enthusiastic Girl</span><br>
+			like <span style="font-size:1.1em;">Coding</span> and</p>			
+			</div>
+		</div>
+		<div class="container">
+	        <div class="row">
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	                 <div class="travel">
+						<img id="travel_s" src="images/travel.jpg" class="img-rounded img-responsive" style="width:200px;height:200px;">
+						<p class="subtitle"><a href="">Traveling</a></p>
+					 </div>
+				 </div>
+					 <!-- the image modal -->
+					 <div class="modal" id="myModal">
+	                 	<span class="close">&times;</span>
+	                 	<img class="modal-content" id="img01">
+	                 	<div id="caption"></div>
+				     </div>
+				     <script>
+						// Get the modal
+						var modal = document.getElementById('myModal');
+						
+						// Get the image and insert it inside the modal - use its "alt" text as a caption
+						var img = document.getElementById('travel_s');
+						var modalImg = document.getElementById("img01");
+						var captionText = document.getElementById("caption");
+						img.onclick = function(){
+						    modal.style.display = "block";
+						    modalImg.src = this.src;
+						    captionText.innerHTML = this.alt;
+						}
+						
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+						
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() { 
+						    modal.style.display = "none";
+						}
+					</script>
+					
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	            	<p>Tennis</p>
+					<p>Swimming</p>
+	            </div>
+	            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	            <div class="travel">
+						<img id="travel_s" src="images/nano.png" class="img-rounded img-responsive" style="width:200px;height:200px;">
+						<p class="subtitle"><a href="">Nanotechnology</a></p>
+					 </div>
+	            </div>           
+	       </div>
+	 </div>
+	</div>
+	<div class="courses">
+		<div class="container">
+		<h2> Activities </h2>
+		</div>
+	</div>
+	<div class="core">
+		<div class="container">
+		<p>April 30, 2016 and April 26, 2014, volunteer of Open House at Thomas Jefferson National Accelerator Facility, Newport News, Virginia.
+		</p>
+		<p>September 2014- November 2014, volunteer of the Confucius Institute at ODU teaching Chinese.</p>
+		<p>September 2009-December 2009, Physics teaching intern at high school affiliated to Anhui Normal University, Wuhu, Anhui, China.</p>
+		</div>
+		
+	</div>
+
+<div class="footer">
+	 		<a href="mailto:xchen011@odu.edu"><span class="icon icon-mail"><img src="images/mail.png"></span></a>
+	 		<a href="https://www.linkedin.com/in/xinchen112/"><span class="icon icon-linkedin"><img src="images/linkedin.png"></span></a>
+	 		<a href="https://github.com/2016Xin"><span class="icon icon-github"><img src="images/github.png"></span></a>
+ 	</div>
+</body>
+</html>
